@@ -12,7 +12,7 @@ El proyecto contiene los siguientes elementos:
 
 ## Cómo Ver la Página
 
-1. Descarga el archivo `mi_pagina.html`.
+1. Descarga el archivo `Rodrigo Andre Ccallo Apaza.html`.
 2. Abre el archivo en un navegador web (puedes hacer doble clic o arrastrarlo al navegador).
 
 ## Uso de la Página
