@@ -3,115 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>Mi página Web Personal</title>
     <style>
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #f8f8f8;
+            scroll-behavior: smooth; /* Desplazamiento suave */
         }
+
+        /* Estilo del encabezado */
         header {
-            background-color: #0c0c0c;
-            color: #FFA500;
+            background-color: black;
+            color: white;
             text-align: center;
-            padding: 1.5em;
+            padding: 10px;
+            font-size: 1.5em;
         }
-        section {
-            background-color: white;
-            margin: 1em auto;
-            padding: 2em;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
+
+        /* Barra de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 10px 0;
         }
-        h1, h2 {
-            color: #f03e07;
-        }
-        ul {
-            list-style-type: square;
-        }
-        a {
-            color: #2600ff;
+
+        nav a {
+            color: white;
             text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
         }
-        a:hover {
-            text-decoration: underline;
+
+        nav a:hover {
+            color: #f8f8f8;
+            background-color: #333;
+            border-radius: 15px;
         }
-        .flex-container {
+
+        /* Estilo de la sección principal */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .bio {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1em;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .logo {
-            flex: 1;
-            text-align: right;
+        .bio h1 {
+            font-size: 2.5em;
+            color: #ff4a4a;
+            margin: 0;
         }
-        .right-image {
+
+        .bio p {
+            font-size: 1em;
+            font-variant: small-caps;
+            color: #333;
+        }
+
+        .bio img {
             max-width: 200px;
-            height: auto;
+            border-radius: 10px;
+            margin-left: 20px;
         }
-        .profile-img-container {
-            flex: 1;
-            text-align: left;
+        
+        .port {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 170px;
-            border: 3px solid #FFA500;
+        .port h1 {
+            font-size: 2.5em;
+            color: #ff4a4a;
+            margin: 0;
         }
+        .Curs {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .Curs h1 {
+            font-size: 2.5em;
+            color: #ff4a4a;
+            margin: 0;
+        }
+        .Com {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .Com h2 {
+            font-size: 2.5em;
+            color: #ff4a4a;
+            margin: 0;
+        }
+
+        /* Estilo del pie de página */
         footer {
             text-align: center;
-            padding: 1em;
-            background-color: #030303;
-            color: #FFA500;
-            margin-top: 1em;
+            padding: 10px;
+            font-size: 0.9em;
+            background-color: #f8f8f8;
+            margin-top: 20px;
+        }
+
+        /* Estilo de los iconos sociales */
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 4px;
+        }
+        .course-images {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 20px;
+        
+        }
+        .course-image {
+          width: 200px;
+          border-radius: 5px; 
+          }
+        .section {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section h2 {
+            color: #003399;
+        }
+
+        /* Footer */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: black;
+        }
+
+        .image {
+            width: 80px;
+            height: auto;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Página Personal</h1>
-    </header>
-    <section class="flex-container">
-        <!-- Imagen en la parte superior izquierda -->
-        <div class="profile-img-container">
-            <img src="Foto.jpg" alt="Foto de perfil" class="profile-img">
+
+    <!-- Encabezado -->
+    <header>Mi página Web Personal</header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#biografia">Biografía</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#cursos">Cursos desarrollados</a>
+        <a href="#Compañeros">Compañeros</a>
+    </nav>
+
+    <!-- Sección Biografía -->
+    <section id="biografia" class="content">
+        <div class="bio">
+            <div>
+                <h1>Rodrigo Ccallo</h1>
+                <p>Me llamo Rodrigo Andre Ccallo Apaza, soy estudiante de Ciencias de la Computación de la Universidad Católica San Pablo, actualmente cursando el segundo semestre de la carrera.</p>
+                <div class="social-icons">
+                  
+                    <a href="#"><img src="insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="face.png" alt="Facebook"></a>
+                    <a href="#"><img src="twit.png" alt="Twitter"></a>
+                    <a href="#"><img src="link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <img src="UCSP.png" alt="Imagen de trabajo">
         </div>
-        <!-- Imagen de la universidad a la derecha -->
-        <div class="logo">
-            <img src="191551.png" alt="Logo de la Universidad" class="right-image">
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="content">
+        <div class="port">
+            <div>
+                <h1>Portafolio</h1>
+                <p>En estos 2 semestres de carrera he desarrollado distintos proyectos para los cursos de programacion de la carrera como los siguientes:</p>
+                <ol>
+                  <li>HAXBALL- Pygame</li>
+                  <li>Base de datos - C++ (en Proceso)</li>
+                  <li>Distintos algoritmos de busqueda binaria</li>
+                  <li>ChatBot en Python</li>
+                </ol>
+                <div class="social-icons">
+                    <a href="#"><img src="insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="face.png" alt="Facebook"></a>
+                    <a href="#"><img src="twit.png" alt="Twitter"></a>
+                    <a href="#"><img src="link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <img src="h.png" alt="Imagen de trabajo">
         </div>
     </section>
-    <section>
-        <h2>Cursos Realizados</h2>
-        <ul>
-            <li>Matemática 1</li>
-            <li>Estructuras Discretas 1</li>
-            <li>Programación de Videojuegos</li>
-        </ul>
+
+    <!-- Sección Cursos desarrollados -->
+    <section id="cursos" class="content">
+        <div class="Curs">
+            <div>
+                <h1>Cursos desarrollados</h1>
+                <p>En la carrera:</p>
+                <ul type=”A”>
+                  <li>Matematica 1</li>
+                  <li>Estructuras Discretas</li>
+                  <li>Programacion de videojuegos</li>
+                </ul>
+                <p>Complementaciones:</p>
+                <ul>
+                  <li>Certificado de Ingles B1</li>
+                  <li>Curso de programacion en C++</li>
+                  <li>Curso de programacion en Python - Cisco</li>
+                </ul>
+                <div class="social-icons">
+                  
+                    <a href="#"><img src="insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="face.png" alt="Facebook"></a>
+                    <a href="#"><img src="twit.png" alt="Twitter"></a>
+                    <a href="#"><img src="link.png" alt="LinkedIn"></a>
+                </div>
+
+              <img src="pythonefw.png" alt="Python y Cisco" class="course-image">
+              <img src="C++.jpg" alt="C++" class="course-image">
+            <div> 
+        </div>
     </section>
-    <section>
-        <h2>Complementaciones</h2>
-        <ul>
-            <li>Nivel de Inglés B1</li>
-            <li>Certificado de Curso de Programación en C++</li>
-            <li>Certificado Curso de Programación en Python Cisco</li>
-        </ul>
+
+    <!-- Sección Blog -->
+    <section id="Compañeros" class="content">
+        <div class="Com">
+          <div class="section">
+            <h2>Compañeros:</h2>
+            <ul>
+                <li><a href="https://pagina-companero1.com" target="_blank">Compañero 1</a></li>
+                <li><a href="https://pagina-companero2.com" target="_blank">Compañero 2</a></li>
+                <li><a href="https://pagina-companero3.com" target="_blank">Compañero 3</a></li>
+                <!-- Enlaces a las páginas de tus compañeros de grupo -->
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Expectativas:</h2>
+            <p>Aún no tengo claro a la especialización de la carrera por la cual quiero decidirme en un futuro, pero por las distintas tecnologías vistas en la carrera estas dos pueden ser buenas opciones.</p>
+            <div>
+                <img src="swift.png" alt="Swift Logo" class="image">
+                <img src="Cyber.png" alt="Cybersecurity Logo" class="image">
+            </div>
+          </div>
+        </div>
     </section>
-    <section>
-        <h2>Compañeros</h2>
-        <ul>
-            <li><a href="https://pagina-companero1.com" target="_blank">Paolo Avalos</a></li>
-            <li><a href="https://pagina-companero2.com" target="_blank">Joaquín Nuñez</a></li>
-            <li><a href="https://pagina-companero3.com" target="_blank">Gabriel Noguera</a></li>
-        </ul>
-    </section>
-    <footer>
-        <p>© 2024 Rodrigo Andre Ccallo Apaza - Todos los derechos reservados.</p>
-    </footer>
+
+    <!-- Pie de página -->
+    <footer>&copy; 2024 Rodrigo Andre Ccallo Apaza – Todos los derechos reservados.</footer>
+
 </body>
 </html>
